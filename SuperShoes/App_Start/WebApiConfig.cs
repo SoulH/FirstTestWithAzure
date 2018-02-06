@@ -16,7 +16,7 @@ namespace SuperShoes
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "services/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }
