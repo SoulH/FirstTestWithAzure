@@ -209,6 +209,7 @@
     <Compile Include="Models\Protoypes\Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\BasicAuthenticationAttribute.cs" />
+    <Compile Include="Security\BasicAuthorizationAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />

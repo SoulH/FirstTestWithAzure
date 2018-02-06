@@ -12,7 +12,7 @@ using SuperShoes.Security;
 
 namespace SuperShoes.ApiControllers
 {
-    [BasicAuthentication("admin", "12345")]
+    [BasicAuthorization("admin", "12345")]
     public class ArticlesController : ApiController
     {
         private ApplicationContext db = new ApplicationContext();

@@ -25,7 +25,7 @@ namespace SuperShoes.Security
             var auth = req.Headers["Authorization"];
             if (!String.IsNullOrEmpty(auth))
             {
-                var cred = System.Text.ASCIIEncoding.ASCII.GetString(Convert.FromBase64String(auth.Substring(6))).Split(':');
+                var cred = System.Text.ASCIIEncoding.ASCII.GetString(Convert.FromBase64String(auth)).Split(':');
                 var user = new { Name = cred[0], Pass = cred[1] };
                 if (user.Name == Username && user.Pass == Password) return;
             }
