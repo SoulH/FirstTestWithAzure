@@ -1,8 +1,8 @@
-﻿using SuperShoes.Models.Protoypes;
+﻿using SuperShoesModels.Prototypes;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace SuperShoes.Models.Entities
+namespace SuperShoesModels.Entities
 {
     public class Store : Entity
     {

@@ -3,9 +3,10 @@
 var stores = new Vue({
     el: '#stores-grid',
     data: {
-        list: []
+        list: [],
+        isLoading: true
     }
-})
+});
 
 $(document).ready(function () {
     load_stores();
@@ -13,19 +14,16 @@ $(document).ready(function () {
 
 function load_stores() {
     request({
-        url: url("services/stores"),
+        url: api("/services/stores"),
         type: "GET"
     }).then(
         function fulfillHandler(data) {
             if (data.Success) {
+                stores._data.isLoading = false;
                 stores._data.list = data.Stores;
             }
                 
         }).catch(function errorHandler(error) {
             // error
         });
-}
-
-function draw_stores(data) {
-    console.log(data);
 }

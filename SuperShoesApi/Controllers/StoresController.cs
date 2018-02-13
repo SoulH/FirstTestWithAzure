@@ -6,11 +6,11 @@ using System.Net;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
-using SuperShoes.Models;
-using SuperShoes.Models.Entities;
-using SuperShoes.Security;
+using SuperShoesModels.Entities;
+using SuperShoesApi.Security;
+using SuperShoesApi.Models;
 
-namespace SuperShoes.ApiControllers
+namespace SuperShoesApi.Controllers
 {
     [BasicAuthorization("admin", "12345")]
     public class StoresController : ApiController

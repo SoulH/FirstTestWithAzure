@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
-namespace SuperShoes
+namespace SuperShoesApi
 {
     public static class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
         {
-            // Configuración y servicios de API web
+            // Configuración y servicios de Web API
+            var cors = new EnableCorsAttribute(origins: "*", headers: "*", methods: "*");
+            config.EnableCors(cors); //enable cors globally without an any restriction
 
-            // Rutas de API web
+            // Rutas de Web API
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

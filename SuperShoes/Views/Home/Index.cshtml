@@ -1,10 +1,15 @@
-﻿<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+﻿<div style="background-color:#C2CFD6; border-radius:10px; margin-bottom:20px; padding:20px;">
+    <img class="img-fluid rounded" src="~/Content/assets/supershoes.jpg" alt="Super Shoes" style="width: 50%; display: block; margin-left: auto; margin-right: auto;"/>
 </div>
 
 <div class="row" id="stores-grid">
+    <div class="col-sm-4 col-md-4 col-lg-4" v-if="isLoading"></div>
+    <div class="col-sm-4 col-md-4 col-lg-4" v-if="isLoading">
+        <img class="img-fluid" src="~/Content/assets/loading.gif" alt="Cargando" />
+        <h3 style="text-align:center; margin:20px;"><b>Cargando Tiendas</b></h3>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" v-if="isLoading"></div>
+
     <div class="col-sm-6 col-lg-3" v-for="item in list" style="margin-bottom:20px;">
         <div class="card text-white bg-primary">
             <div class="card-body pb-0">

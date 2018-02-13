@@ -1,16 +1,15 @@
-﻿using System.Data;
+﻿using System.Web.Http;
+using System.Web.Http.Description;
+using SuperShoesModels.Entities;
+using SuperShoesApi.Security;
+using SuperShoesApi.Models;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
-using System.Web.Http;
-using System.Web.Http.Description;
-using SuperShoes.Models;
-using SuperShoes.Models.Entities;
-using SuperShoes.Security;
 
-namespace SuperShoes.ApiControllers
+namespace SuperShoesApi.Controllers
 {
     [BasicAuthorization("admin", "12345")]
     public class ArticlesController : ApiController
@@ -27,7 +26,8 @@ namespace SuperShoes.ApiControllers
                 r.Price,
                 r.Total_in_shelf,
                 r.Total_in_vault,
-                Store_name = r.Store.Name }).ToList();
+                Store_name = r.Store.Name
+            }).ToList();
             return Json(new { Articles = articles, Success = true, Total_elements = articles.Count });
         }
 

@@ -1,7 +1,7 @@
-﻿using SuperShoes.Models.Protoypes;
+﻿using SuperShoesModels.Prototypes;
 using System.ComponentModel.DataAnnotations;
 
-namespace SuperShoes.Models.Entities
+namespace SuperShoesModels.Entities
 {
     public class Article : Entity
     {

@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperShoes", "SuperShoes\SuperShoes.csproj", "{2FF5B832-3731-4E77-BBDC-43308C8EA8AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperShoesApi", "SuperShoesApi\SuperShoesApi.csproj", "{C0DD539C-2C6B-4178-886F-D7E7764AB932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperShoesApi.Tests", "SuperShoesApi.Tests\SuperShoesApi.Tests.csproj", "{9BE29586-B12D-4907-82FE-A8A1E949C849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperShoesModels", "SuperShoesModels\SuperShoesModels.csproj", "{AC47E949-3ACA-4841-858A-13472AB27A37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{2FF5B832-3731-4E77-BBDC-43308C8EA8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FF5B832-3731-4E77-BBDC-43308C8EA8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FF5B832-3731-4E77-BBDC-43308C8EA8AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0DD539C-2C6B-4178-886F-D7E7764AB932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DD539C-2C6B-4178-886F-D7E7764AB932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0DD539C-2C6B-4178-886F-D7E7764AB932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DD539C-2C6B-4178-886F-D7E7764AB932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE29586-B12D-4907-82FE-A8A1E949C849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE29586-B12D-4907-82FE-A8A1E949C849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE29586-B12D-4907-82FE-A8A1E949C849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE29586-B12D-4907-82FE-A8A1E949C849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC47E949-3ACA-4841-858A-13472AB27A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC47E949-3ACA-4841-858A-13472AB27A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC47E949-3ACA-4841-858A-13472AB27A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC47E949-3ACA-4841-858A-13472AB27A37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
